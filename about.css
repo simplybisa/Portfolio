@@ -1,7 +1,3 @@
-:root {
-    scroll-behavior: smooth;
-}
-
 ::selection {
     background: #000000;
     color: #FFFFFF;
@@ -12,43 +8,21 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
     box-sizing: border-box;
     font-optical-sizing: auto;
 }
 
 body {
-    background: url(images/background.png);
+    background: url(images/nature.png);
     background-position: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
 
-#scrollbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #00DDFF;
-    width: 100%;
-    height: 10px;
-    animation: scrollbar linear;
-    animation-timeline: scroll();
-}
-
-@keyframes scrollbar {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 nav {
     width: 100%;
-    top: 10px;
     padding: 2rem 5rem 2rem 5rem;
     display: flex;
     align-items: center;
@@ -56,6 +30,7 @@ nav {
     background: transparent;
     backdrop-filter: blur(5px);
     position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo img {
@@ -66,7 +41,7 @@ nav {
 ul {
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2vw;
 }
 
 li a {
@@ -74,7 +49,7 @@ li a {
     border-radius: 25px;
     text-decoration: none;
     padding: 10px 15px;
-    color: #000000;
+    color: #FFFFFF;
     font-weight: 600;
     font-size: 20px;
     transition: .5s;
@@ -90,18 +65,20 @@ li a:hover {
 
 #login button {
     background: transparent;
-    width: 10vh;
-    height: 6vh;
+    width: 7.5vw;
+    height: 5vh;
     font-weight: 600;
     font-size: 20px;
+    border-color: #FFFFFF;
     border-radius: 15px;
     transition: .5s;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 #login button:hover {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 #title {
@@ -111,7 +88,7 @@ li a:hover {
     font-size: 50px;
     font-weight: 600;
     color: #FFFFFF;
-    text-shadow: #000000 1px 0 10px;
+    text-shadow: #101828 1px 0 10px;
 }
 
 #info {
@@ -120,7 +97,7 @@ li a:hover {
     font-family: "Nunito";
     font-size: 25px;
     color: #FFFFFF;
-    text-shadow: #000000 1px 0 10px;
+    text-shadow: #101828 1px 0 10px;
 }
 
 footer {
@@ -132,5 +109,5 @@ footer {
     font-family: "Nunito";
     font-size: 30px;
     color: #FFFFFF;
-    text-shadow: #000000 1px 0 10px;
+    text-shadow: #101828 1px 0 10px;
 }
