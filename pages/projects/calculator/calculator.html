@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Portfolio/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Portfolio/pages/projects/calculator/calculator.css">
+    <title>Calculator</title>
+</head>
+<script type="text/javascript" src="/Portfolio/pages/projects/calculator/calculator.js"></script>
+<body>
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <li><a href="/Portfolio/index.html">Home</a></li>
+                <li><a href="/Portfolio/pages/about.html">About</a></li>
+                <li><a href="/Portfolio/pages/projects.html">Projects</a></li>
+                <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div id="web_changes">
+                <table id="inputs">
+                    <tr id="inputs">
+                        <td id="inputs">Wybierz kolor tła: <input type="color" value="#000000" name="background_color" id="background_color" onblur="background_color()"></td>
+                        <td id="inputs">Wybierz kolor tekstu: <input type="color" value="#FFFFFF" name="text_color" id="text_color" onblur="text_color()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="result"></div>
+
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button id="button" onclick="addtoresult('1')" value="1">1</button></td>
+                        <td><button id="button" onclick="addtoresult('2')" value="2">2</button></td>
+                        <td><button id="button" onclick="addtoresult('3')" value="3">3</button></td>
+                        <td><button id="button" onclick="ac()">C</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="button" onclick="addtoresult('4')" value="4">4</button></td>
+                        <td><button id="button" onclick="addtoresult('5')" value="5">5</button></td>
+                        <td><button id="button" onclick="addtoresult('6')" value="6">6</button></td>
+                        <td><button id="button" onclick="addtoresult('+')" value="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="button" onclick="addtoresult('7')" value="7">7</button></td>
+                        <td><button id="button" onclick="addtoresult('8')" value="8">8</button></td>
+                        <td><button id="button" onclick="addtoresult('9')" value="9">9</button></td>
+                        <td><button id="button" onclick="addtoresult('-')" value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="button" onclick="addtoresult('.')" value=".">.</button></td>
+                        <td><button id="button" onclick="addtoresult('0')" value="0">0</button></td>
+                        <td><button id="button" onclick="addtoresult('/')" value="/">/</button></td>
+                        <td><button id="button" onclick="addtoresult('*')" value="*">*</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><button id="button" onclick="calc()" value="=" id="equal">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
